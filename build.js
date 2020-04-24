@@ -8,7 +8,6 @@ function build() {
   const start = performance.now();
   const workflow = buildWorkflow();
   const ui = buildUi();
-
   const timing = (performance.now() - start) / 1000;
 
   process.stdout.write(`Built Spectrum icons in ${timing.toFixed(2)}s.\n`);
@@ -18,9 +17,9 @@ function build() {
 
   const docs = [
     "# docs",
-    `> ${workflow.moduleNames.length} Workflow icons built with @adobe/spectrum-css-workflow-icons version ${pkg.devDependencies["@adobe/spectrum-css-workflow-icons"]}.`,
+    `> ${workflow.moduleNames.length} Workflow icons from @adobe/spectrum-css-workflow-icons v${pkg.devDependencies["@adobe/spectrum-css-workflow-icons"]}.`,
     "\n",
-    `> ${ui.moduleNames.length} UI icons built with @spectrum-css/icon version ${pkg.devDependencies["@spectrum-css/icon"]}.`,
+    `> ${ui.moduleNames.length} UI icons from @spectrum-css/icon v${pkg.devDependencies["@spectrum-css/icon"]}.`,
     "## Usage",
     "### Workflow icons",
     "```html",
