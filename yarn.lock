@@ -17,28 +17,16 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-prettier@1.19.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
-  integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
-
-svelte@^3.21.0:
-  version "3.21.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.21.0.tgz#e326591cb92267e90b4fb5b961d80d9763792551"
-  integrity sha512-smh3LZKPCGJ+UXa0iZvUmuDctPYCwPY1opmClTWTm+l6e4y9FHLoCZMiue8YIeyc9JvlGT/EK0xry0diXjFDZQ==
-
 svg-parser@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
   integrity sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==
 
-svg-to-svelte@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/svg-to-svelte/-/svg-to-svelte-0.2.1.tgz#4591e7598a74e8fa06757bf61b086a7c2b9995a0"
-  integrity sha512-fSDhwNJTy+KtPVd0gYfgXubMzrrRwGaUtLLeyL9/yNmP3Y84ymzqYq9awD9RCoKQp+VxMlHsn7ZtOjPG2anW+w==
+svg-to-svelte@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/svg-to-svelte/-/svg-to-svelte-0.3.0.tgz#0e98367cff9cf36e84e033a34f30c4f4d8925531"
+  integrity sha512-oT4JPZNfJoszA5I+FU9beFnxXJZlaW3bGKOZOFqEBFm0/HpzWLloj6g+8JI6MQNl9vmraUQbDtalp7WL64nLUg==
   dependencies:
-    prettier "1.19.1"
-    svelte "^3.21.0"
     svg-parser "^2.0.4"
     unist-util-visit "^2.0.2"
 

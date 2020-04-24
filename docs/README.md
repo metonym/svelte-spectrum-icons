@@ -1,19 +1,24 @@
 # docs
-> 1783 Workflow icons from @adobe/spectrum-css-workflow-icons@1.0.0.
 
+> 1783 Workflow icons from @adobe/spectrum-css-workflow-icons@1.0.0.
 > 72 UI icons from @spectrum-css/icon@2.1.0.
+
 ## Usage
+
 ### Workflow icons
+
 ```html
 <script>
-       import WorkflowIcon from "svelte-spectrum-icons/workflow/{ModuleName}";
-     </script>
+  import WorkflowIcon from "svelte-spectrum-icons/workflow/{ModuleName}";
+</script>
 
-     <WorkflowIcon />
+<WorkflowIcon />
 ```
+
 #### List of Workflow icons by `ModuleName`
-- _12318
-- _3DMaterials18
+
+- \_12318
+- \_3DMaterials18
 - ABC18
 - AEMScreens18
 - Actions18
@@ -894,8 +899,8 @@
 - Wrench18
 - ZoomIn18
 - ZoomOut18
-- _12324
-- _3DMaterials24
+- \_12324
+- \_3DMaterials24
 - ABC24
 - AEMScreens24
 - Actions24
@@ -1795,15 +1800,19 @@
 - UserCircleColorLight24
 - UserGroupCircleColorDark24
 - UserGroupCircleColorLight24
+
 ### UI icons
+
 ```html
 <script>
-       import UiIcon from "svelte-spectrum-icons/ui/{ModuleName}";
-     </script>
+  import UiIcon from "svelte-spectrum-icons/ui/{ModuleName}";
+</script>
 
-     <UiIcon />
+<UiIcon />
 ```
+
 #### List of UI icons by `ModuleName`
+
 - AlertMediumMobile
 - AlertSmallMobile
 - ArrowDownSmallMobile
