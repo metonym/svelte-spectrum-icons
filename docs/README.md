@@ -1,7 +1,8 @@
 # docs
 
-> 1783 Workflow icons built with @adobe/spectrum-css-workflow-icons version 1.0.0.
-> 72 UI icons built with @spectrum-css/icon version 2.1.0.
+> 1783 Workflow icons from @adobe/spectrum-css-workflow-icons v1.0.0.
+
+> 72 UI icons from @spectrum-css/icon v2.1.0.
 
 ## Usage
 
@@ -15,7 +16,7 @@
 <WorkflowIcon />
 ```
 
-## List of Workflow icons by `ModuleName`
+#### List of Workflow icons by `ModuleName`
 
 - \_12318
 - \_3DMaterials18
@@ -1811,7 +1812,7 @@
 <UiIcon />
 ```
 
-## List of UI icons by `ModuleName`
+#### List of UI icons by `ModuleName`
 
 - AlertMediumMobile
 - AlertSmallMobile
