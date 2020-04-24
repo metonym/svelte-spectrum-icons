@@ -11,7 +11,7 @@ function build() {
 
   const timing = (performance.now() - start) / 1000;
 
-  process.stdout.write(`Built in ${timing.toFixed(2)}s.`);
+  process.stdout.write(`Built Spectrum icons in ${timing.toFixed(2)}s.\n`);
 
   fs.rmdirSync("docs", { recursive: true });
   fs.mkdirSync("docs");
