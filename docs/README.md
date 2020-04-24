@@ -1,6 +1,7 @@
 # docs
 
 > 1783 Workflow icons from @adobe/spectrum-css-workflow-icons@1.0.0.
+
 > 72 UI icons from @spectrum-css/icon@2.1.0.
 
 ## Usage
