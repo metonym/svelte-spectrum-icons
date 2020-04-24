@@ -19,6 +19,7 @@ function build() {
   const docs = [
     "# docs",
     `> ${workflow.moduleNames.length} Workflow icons built with @adobe/spectrum-css-workflow-icons version ${pkg.devDependencies["@adobe/spectrum-css-workflow-icons"]}.`,
+    "\n",
     `> ${ui.moduleNames.length} UI icons built with @spectrum-css/icon version ${pkg.devDependencies["@spectrum-css/icon"]}.`,
     "## Usage",
     "### Workflow icons",
