@@ -1,25 +1,54 @@
-const { buildWorkflow } = require("./build-workflow");
-const { buildUi } = require("./build-ui");
-const { performance } = require("perf_hooks");
 const fs = require("fs");
 const pkg = require("./package.json");
+const { cleanDir, generateFromFolder } = require("svg-to-svelte");
 
 function build() {
-  const start = performance.now();
-  const workflow = buildWorkflow();
-  const ui = buildUi();
-  const timing = (performance.now() - start) / 1000;
+  let UI = [];
+  let Workflow = [];
 
-  process.stdout.write(`Built Spectrum icons in ${timing.toFixed(2)}s.\n`);
+  const UI_folders = {
+    large: "Mobile",
+    medium: "",
+  };
 
-  fs.rmdirSync("docs", { recursive: true });
-  fs.mkdirSync("docs");
+  Object.keys(UI_folders).forEach((folder, i) => {
+    const ui = generateFromFolder(
+      `node_modules/@spectrum-css/icon/${folder}`,
+      "ui",
+      {
+        clean: i === 0,
+        onModuleName: (moduleName) => moduleName + UI_folders[folder],
+      }
+    );
+
+    UI = [...UI, ...ui.moduleNames];
+  });
+
+  const Workflow_folders = {
+    "18": "18",
+    "24": "24",
+    "color/24": "24",
+  };
+
+  Object.keys(Workflow_folders).forEach((folder, i) => {
+    const workflow = generateFromFolder(
+      `node_modules/@adobe/spectrum-css-workflow-icons/dist/${folder}`,
+      "workflow",
+      {
+        clean: i === 0,
+        onModuleName: (moduleName) => moduleName + Workflow_folders[folder],
+      }
+    );
+
+    Workflow = [...Workflow, ...workflow.moduleNames];
+  });
+
+  cleanDir("docs");
 
   const docs = [
     "# docs",
-    `> ${workflow.moduleNames.length} Workflow icons from @adobe/spectrum-css-workflow-icons v${pkg.devDependencies["@adobe/spectrum-css-workflow-icons"]}.`,
-    "\n",
-    `> ${ui.moduleNames.length} UI icons from @spectrum-css/icon v${pkg.devDependencies["@spectrum-css/icon"]}.`,
+    `> ${Workflow.length} Workflow icons from @adobe/spectrum-css-workflow-icons@${pkg.devDependencies["@adobe/spectrum-css-workflow-icons"]}.\n`,
+    `> ${UI.length} UI icons from @spectrum-css/icon@${pkg.devDependencies["@spectrum-css/icon"]}.`,
     "## Usage",
     "### Workflow icons",
     "```html",
@@ -30,7 +59,7 @@ function build() {
      <WorkflowIcon />`,
     "```",
     "#### List of Workflow icons by `ModuleName`",
-    workflow.moduleNames.map((moduleName) => `- ${moduleName}`).join("\n"),
+    Workflow.map((moduleName) => `- ${moduleName}`).join("\n"),
     "### UI icons",
     "```html",
     `<script>
@@ -40,10 +69,10 @@ function build() {
      <UiIcon />`,
     "```",
     "#### List of UI icons by `ModuleName`",
-    ui.moduleNames.map((moduleName) => `- ${moduleName}`).join("\n"),
-  ];
+    UI.map((moduleName) => `- ${moduleName}`).join("\n"),
+  ].join("\n");
 
-  fs.writeFileSync("docs/README.md", docs.join("\n"));
+  fs.writeFileSync("docs/README.md", docs);
 }
 
 build();
