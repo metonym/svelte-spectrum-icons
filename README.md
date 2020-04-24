@@ -3,7 +3,7 @@
 [![NPM][npm]][npm-url]
 [![Build][build]][build-badge]
 
-> Adobe Spectrum workflow and UI SVG icons as Svelte components.
+> Adobe Spectrum Workflow and UI SVG icons as Svelte components.
 
 This library builds [Adobe Spectrum Workflow and UI icons](https://spectrum.adobe.com/page/icons/) as Svelte components with zero dependencies.
 
