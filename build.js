@@ -29,7 +29,7 @@ function build() {
 
      <WorkflowIcon />`,
     "```",
-    "## List of Workflow icons by `ModuleName`",
+    "#### List of Workflow icons by `ModuleName`",
     workflow.moduleNames.map((moduleName) => `- ${moduleName}`).join("\n"),
     "### UI icons",
     "```html",
@@ -39,7 +39,7 @@ function build() {
 
      <UiIcon />`,
     "```",
-    "## List of UI icons by `ModuleName`",
+    "#### List of UI icons by `ModuleName`",
     ui.moduleNames.map((moduleName) => `- ${moduleName}`).join("\n"),
   ];
 
