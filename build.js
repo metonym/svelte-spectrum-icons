@@ -2,7 +2,7 @@ const fs = require("fs");
 const pkg = require("./package.json");
 const { cleanDir, generateFromFolder } = require("svg-to-svelte");
 
-function build() {
+async function build() {
   let UI = [];
   let Workflow = [];
 
@@ -11,12 +11,13 @@ function build() {
     medium: "",
   };
 
-  Object.keys(UI_folders).forEach((folder, i) => {
-    const ui = generateFromFolder(
+  await cleanDir("ui");
+
+  Object.keys(UI_folders).forEach(async (folder) => {
+    const ui = await generateFromFolder(
       `node_modules/@spectrum-css/icon/${folder}`,
       "ui",
       {
-        clean: i === 0,
         onModuleName: (moduleName) => moduleName + UI_folders[folder],
       }
     );
@@ -24,18 +25,19 @@ function build() {
     UI = [...UI, ...ui.moduleNames];
   });
 
+  await cleanDir("workflow");
+
   const Workflow_folders = {
     "18": "18",
     "24": "24",
     "color/24": "24",
   };
 
-  Object.keys(Workflow_folders).forEach((folder, i) => {
-    const workflow = generateFromFolder(
+  Object.keys(Workflow_folders).forEach(async (folder) => {
+    const workflow = await generateFromFolder(
       `node_modules/@adobe/spectrum-css-workflow-icons/dist/${folder}`,
       "workflow",
       {
-        clean: i === 0,
         onModuleName: (moduleName) => moduleName + Workflow_folders[folder],
       }
     );
@@ -43,7 +45,7 @@ function build() {
     Workflow = [...Workflow, ...workflow.moduleNames];
   });
 
-  cleanDir("docs");
+  await cleanDir("docs");
 
   const docs = [
     "# docs",
@@ -59,7 +61,9 @@ function build() {
      <WorkflowIcon />`,
     "```",
     "#### List of Workflow icons by `ModuleName`",
-    Workflow.map((moduleName) => `- ${moduleName}`).join("\n"),
+    Workflow.sort()
+      .map((moduleName) => `- ${moduleName}`)
+      .join("\n"),
     "### UI icons",
     "```html",
     `<script>
@@ -69,7 +73,9 @@ function build() {
      <UiIcon />`,
     "```",
     "#### List of UI icons by `ModuleName`",
-    UI.map((moduleName) => `- ${moduleName}`).join("\n"),
+    UI.sort()
+      .map((moduleName) => `- ${moduleName}`)
+      .join("\n"),
   ].join("\n");
 
   fs.writeFileSync("docs/README.md", docs);
