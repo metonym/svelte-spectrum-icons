@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@adobe/spectrum-css-workflow-icons/-/spectrum-css-workflow-icons-1.0.0.tgz#913f3a251ef5ea3154929a7a23d4fbd6de1553da"
   integrity sha512-aJbk7XhsUNefoufMpneq2aIT3VuD++KUY0C08VKbt5p/WOW0aDX8WYavUxW4oiK5cAgsvapcaPaS+eWpBMwXLg==
 
-"@spectrum-css/icon@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-2.1.0.tgz#99c772516413f7c1063635ac9d7e7472f8c18a4e"
-  integrity sha512-VrNyqo8lfTf1sdSRW1MlUvh4hqc0uxeNWn5xtMBVRuQPkceAyHySfv6k6Stk3oLsfHf0+UMOHP/xPOb9lVgt0Q==
+"@spectrum-css/icon@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-2.1.1.tgz#53b371b293833e501898472dda8661a07db09fd8"
+  integrity sha512-Ddnjw3YTZiuJC8uVJ9x6i+ufQN+Vp4vibc+YxE7nXn8tWzT8zTRzwv6oHwSG9m+KzonTfnwqPuQx6ZA8vbK9xA==
 
 "@types/unist@^2.0.0":
   version "2.0.3"
