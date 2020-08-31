@@ -17,9 +17,9 @@ svelte@^3.24.0:
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.24.1.tgz#aca364937dd1df27fe131e2a4c234acb6061db4b"
   integrity sha512-OX/IBVUJSFo1rnznXdwf9rv6LReJ3qQ0PwRjj76vfUWyTfbHbR9OXqJBnUrpjyis2dwYcbT2Zm1DFjOOF1ZbbQ==
 
-svg-to-svelte@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/svg-to-svelte/-/svg-to-svelte-1.0.1.tgz#812346974fe00074162757e55dd9f9e62616fbb4"
-  integrity sha512-kTbTnqYoA2KrVG4EceBsy453mX55tbYOpBxO1PK6AjF4enNBvVSb66S9I6IfOavXu2LArwFfWOtQ3Ni8qA2iqQ==
+svg-to-svelte@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/svg-to-svelte/-/svg-to-svelte-2.0.0.tgz#0069ccd8dca85fb2fc233eac3b56c54235425c66"
+  integrity sha512-zKVAPwmZvqgu04ulR/92HILIt3LAGP+RZTGFDsqsBXEw/qABGqhQFlkmqNAtRq4iV5iVRb+O6nQX0CgoVzwatw==
   dependencies:
     svelte "^3.24.0"
