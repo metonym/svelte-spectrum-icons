@@ -2,19 +2,21 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "develop": "sapper dev",
+    "dev": "sapper dev",
     "build": "sapper export --basepath svelte-spectrum-icons",
     "deploy": "node gh-pages"
   },
   "dependencies": {
-    "polka": "next",
-    "sirv": "^0.4.0"
+    "polka": "next"
   },
   "devDependencies": {
     "@metonym/sapper": "^0.27.12",
+    "clipboard-copy": "^3.1.0",
     "gh-pages": "^2.2.0",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
+    "svelte-octicons": "^10.1.0",
+    "svelte-primer": "^0.1.0-rc.4",
     "svelte-spectrum-icons": "../",
     "webpack": "^4.43.0"
   }

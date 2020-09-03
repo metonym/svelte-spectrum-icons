@@ -1,23 +1,17 @@
 # docs
-
 > 1783 Workflow icons from @adobe/spectrum-css-workflow-icons@1.0.0.
 
 > 72 UI icons from @spectrum-css/icon@2.1.1.
-
 ## Usage
-
 ### Workflow icons
-
 ```html
 <script>
-  import WorkflowIcon from "svelte-spectrum-icons/workflow/{ModuleName}";
-</script>
+       import WorkflowIcon from "svelte-spectrum-icons/workflow/{ModuleName}";
+     </script>
 
-<WorkflowIcon />
+     <WorkflowIcon />
 ```
-
 #### List of Workflow icons by `ModuleName`
-
 - ABC18
 - ABC24
 - AEMScreens18
@@ -1797,23 +1791,19 @@
 - ZoomIn24
 - ZoomOut18
 - ZoomOut24
-- \_12318
-- \_12324
-- \_3DMaterials18
-- \_3DMaterials24
-
+- _12318
+- _12324
+- _3DMaterials18
+- _3DMaterials24
 ### UI icons
-
 ```html
 <script>
-  import UiIcon from "svelte-spectrum-icons/ui/{ModuleName}";
-</script>
+       import UiIcon from "svelte-spectrum-icons/ui/{ModuleName}";
+     </script>
 
-<UiIcon />
+     <UiIcon />
 ```
-
 #### List of UI icons by `ModuleName`
-
 - AlertMedium
 - AlertMediumMobile
 - AlertSmall
