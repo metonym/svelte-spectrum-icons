@@ -13,6 +13,8 @@ For Workflow icons, the sizes are appended to the icon name. For example, `Add` 
 
 For UI icons, the word "Mobile" is appended to the icon name; `Asterisk` is size `18` while `AsteriskMobile` is size `24`.
 
+## [Icon Preview](https://metonym.github.io/svelte-spectrum-icons/)
+
 ## Install
 
 ```bash
