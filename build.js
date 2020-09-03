@@ -18,6 +18,7 @@ async function build() {
       `node_modules/@spectrum-css/icon/${folder}`,
       "ui",
       {
+        clean: false,
         onModuleName: (moduleName) => moduleName + UI_folders[folder],
       }
     );
@@ -28,8 +29,8 @@ async function build() {
   await cleanDir("workflow");
 
   const Workflow_folders = {
-    "18": "18",
-    "24": "24",
+    18: "18",
+    24: "24",
     "color/24": "24",
   };
 
@@ -38,6 +39,7 @@ async function build() {
       `node_modules/@adobe/spectrum-css-workflow-icons/dist/${folder}`,
       "workflow",
       {
+        clean: false,
         onModuleName: (moduleName) => moduleName + Workflow_folders[folder],
       }
     );
