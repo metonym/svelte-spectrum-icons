@@ -1,6 +1,6 @@
 {
   "name": "svelte-spectrum-icons",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Adobe Spectrum Workflow and UI SVG icons as Svelte components",
   "author": "Eric Liu (https://github.com/metonym)",
