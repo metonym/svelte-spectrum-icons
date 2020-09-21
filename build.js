@@ -3,7 +3,6 @@ const pkg = require("./package.json");
 const { cleanDir, generateFromFolder } = require("svg-to-svelte");
 
 async function build() {
-  let UI = [];
   let Workflow = [];
 
   const UI_folders = {
@@ -11,20 +10,10 @@ async function build() {
     medium: "",
   };
 
-  await cleanDir("ui");
-
-  Object.keys(UI_folders).forEach(async (folder) => {
-    const ui = await generateFromFolder(
-      `node_modules/@spectrum-css/icon/${folder}`,
-      "ui",
-      {
-        clean: false,
-        onModuleName: (moduleName) => moduleName + UI_folders[folder],
-      }
-    );
-
-    UI = [...UI, ...ui.moduleNames];
-  });
+  const ui = await generateFromFolder(
+    `node_modules/@spectrum-css/icon/combined`,
+    "ui"
+  );
 
   await cleanDir("workflow");
 
@@ -34,23 +23,29 @@ async function build() {
     "color/24": "24",
   };
 
-  Object.keys(Workflow_folders).forEach(async (folder) => {
-    const workflow = await generateFromFolder(
-      `node_modules/@adobe/spectrum-css-workflow-icons/dist/${folder}`,
-      "workflow",
-      {
-        clean: false,
-        onModuleName: (moduleName) => moduleName + Workflow_folders[folder],
-      }
-    );
+  await Promise.all(
+    Object.keys(Workflow_folders).map(async (folder) => {
+      const workflow = await generateFromFolder(
+        `node_modules/@adobe/spectrum-css-workflow-icons/dist/${folder}`,
+        "workflow",
+        {
+          clean: false,
+          onModuleName: (moduleName) => {
+            const module_name = moduleName + Workflow_folders[folder];
+            Workflow.push(module_name);
+            return module_name;
+          },
+        }
+      );
+    })
+  );
 
-    Workflow = [...Workflow, ...workflow.moduleNames];
-  });
+  return { UI: ui.moduleNames, Workflow };
+}
 
-  await cleanDir("docs");
-
+function write({ UI, Workflow }) {
   const docs = [
-    "# docs",
+    "# Icon Index",
     `> ${Workflow.length} Workflow icons from @adobe/spectrum-css-workflow-icons@${pkg.devDependencies["@adobe/spectrum-css-workflow-icons"]}.\n`,
     `> ${UI.length} UI icons from @spectrum-css/icon@${pkg.devDependencies["@spectrum-css/icon"]}.`,
     "## Usage",
@@ -80,7 +75,10 @@ async function build() {
       .join("\n"),
   ].join("\n");
 
-  fs.writeFileSync("docs/README.md", docs);
+  fs.writeFileSync("ICON_INDEX.md", docs);
 }
 
-build();
+(async () => {
+  const result = await build();
+  write(result);
+})();
