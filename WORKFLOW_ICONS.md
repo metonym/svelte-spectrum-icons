@@ -1,6 +1,6 @@
 # Workflow icons
 
-> 1803 icons from svelte-spectrum-icons@1.1.0.
+> 1803 icons from svelte-spectrum-icons@2.0.0.
 
 ## Usage
 
