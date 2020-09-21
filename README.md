@@ -19,8 +19,10 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/8b2c2ef9ad68426bb320d455026b
 
 ## Install
 
-```bash
+```sh
 yarn add -D svelte-spectrum-icons
+# OR
+npm -i -D svelte-spectrum-icons
 ```
 
 ## Usage
@@ -37,10 +39,10 @@ Workflow icons are located in the `workflow` folder while UI icons are in the `u
 <Asterisk />
 ```
 
-Refer to [docs/README.md](docs/README.md) for a full list of supported icons:
+Refer to [ICON_INDEX.md](ICON_INDEX.md) for a full list of supported icons:
 
-- [Workflow icons](docs/README.md#workflow-icons)
-- [UI icons](docs/README.md#ui-icons)
+- [Workflow icons](ICON_INDEX.md#workflow-icons)
+- [UI icons](ICON_INDEX.md#ui-icons)
 
 ## API
 
