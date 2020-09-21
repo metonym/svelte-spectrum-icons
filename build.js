@@ -3,6 +3,7 @@ const pkg = require("./package.json");
 const { cleanDir, generateFromFolder } = require("svg-to-svelte");
 
 async function build() {
+  let UI = [];
   let Workflow = [];
 
   const UI_folders = {
@@ -10,9 +11,23 @@ async function build() {
     medium: "",
   };
 
-  const ui = await generateFromFolder(
-    `node_modules/@spectrum-css/icon/combined`,
-    "ui"
+  await cleanDir("ui");
+
+  await Promise.all(
+    Object.keys(UI_folders).map(async (folder) => {
+      const ui = await generateFromFolder(
+        `node_modules/@spectrum-css/icon/${folder}`,
+        "ui",
+        {
+          clean: false,
+          onModuleName: (moduleName) => {
+            const module_name = moduleName + UI_folders[folder];
+            UI.push(module_name);
+            return module_name;
+          },
+        }
+      );
+    })
   );
 
   await cleanDir("workflow");
@@ -40,7 +55,7 @@ async function build() {
     })
   );
 
-  return { UI: ui.moduleNames, Workflow };
+  return { UI, Workflow };
 }
 
 function write({ UI, Workflow }) {

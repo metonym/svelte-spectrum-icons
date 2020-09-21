@@ -2,7 +2,7 @@
 
 > 1803 Workflow icons from @adobe/spectrum-css-workflow-icons@1.1.0.
 
-> 36 UI icons from @spectrum-css/icon@2.1.1.
+> 72 UI icons from @spectrum-css/icon@2.1.1.
 
 ## Usage
 
@@ -1835,38 +1835,74 @@
 #### List of UI icons by `ModuleName`
 
 - AlertMedium
+- AlertMediumMobile
 - AlertSmall
+- AlertSmallMobile
 - ArrowDownSmall
+- ArrowDownSmallMobile
 - ArrowLeftMedium
+- ArrowLeftMediumMobile
 - ArrowUpSmall
+- ArrowUpSmallMobile
 - Asterisk
+- AsteriskMobile
 - CheckmarkMedium
+- CheckmarkMediumMobile
 - CheckmarkSmall
+- CheckmarkSmallMobile
 - ChevronDownMedium
+- ChevronDownMediumMobile
 - ChevronDownSmall
+- ChevronDownSmallMobile
 - ChevronLeftLarge
+- ChevronLeftLargeMobile
 - ChevronLeftMedium
+- ChevronLeftMediumMobile
 - ChevronRightLarge
+- ChevronRightLargeMobile
 - ChevronRightMedium
+- ChevronRightMediumMobile
 - ChevronRightSmall
+- ChevronRightSmallMobile
 - ChevronUpSmall
+- ChevronUpSmallMobile
 - CornerTriangle
+- CornerTriangleMobile
 - CrossLarge
+- CrossLargeMobile
 - CrossMedium
+- CrossMediumMobile
 - CrossSmall
+- CrossSmallMobile
 - DashSmall
+- DashSmallMobile
 - DoubleGripper
+- DoubleGripperMobile
 - FolderBreadcrumb
+- FolderBreadcrumbMobile
 - HelpMedium
+- HelpMediumMobile
 - HelpSmall
+- HelpSmallMobile
 - InfoMedium
+- InfoMediumMobile
 - InfoSmall
+- InfoSmallMobile
 - Magnifier
+- MagnifierMobile
 - More
+- MoreMobile
 - SkipLeft
+- SkipLeftMobile
 - SkipRight
+- SkipRightMobile
 - Star
+- StarMobile
 - StarOutline
+- StarOutlineMobile
 - SuccessMedium
+- SuccessMediumMobile
 - SuccessSmall
+- SuccessSmallMobile
 - TripleGripper
+- TripleGripperMobile
