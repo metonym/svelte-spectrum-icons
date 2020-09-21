@@ -6,7 +6,7 @@
   "author": "Eric Liu (https://github.com/metonym)",
   "sideEffects": false,
   "scripts": {
-    "build-icons": "node build"
+    "prepack": "node build"
   },
   "peerDependencies": {
     "svelte": "^3.20.x"

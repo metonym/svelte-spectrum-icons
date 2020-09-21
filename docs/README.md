@@ -1,17 +1,23 @@
 # docs
-> 1783 Workflow icons from @adobe/spectrum-css-workflow-icons@1.0.0.
+
+> 1803 Workflow icons from @adobe/spectrum-css-workflow-icons@1.1.0.
 
 > 72 UI icons from @spectrum-css/icon@2.1.1.
+
 ## Usage
+
 ### Workflow icons
+
 ```html
 <script>
-       import WorkflowIcon from "svelte-spectrum-icons/workflow/{ModuleName}";
-     </script>
+  import WorkflowIcon from "svelte-spectrum-icons/workflow/{ModuleName}";
+</script>
 
-     <WorkflowIcon />
+<WorkflowIcon />
 ```
+
 #### List of Workflow icons by `ModuleName`
+
 - ABC18
 - ABC24
 - AEMScreens18
@@ -30,6 +36,8 @@
 - AddTo24
 - AddToSelection18
 - AddToSelection24
+- Airplane18
+- Airplane24
 - Alert18
 - Alert24
 - AlertAdd18
@@ -40,6 +48,8 @@
 - AlertCircle24
 - AlertCircleFilled18
 - AlertCircleFilled24
+- Algorithm18
+- Algorithm24
 - Alias18
 - Alias24
 - AlignBottom18
@@ -54,6 +64,8 @@
 - AlignRight24
 - AlignTop18
 - AlignTop24
+- Amusementpark18
+- Amusementpark24
 - Anchor18
 - Anchor24
 - AnchorSelect18
@@ -241,6 +253,8 @@
 - Capitals24
 - Captcha18
 - Captcha24
+- Car18
+- Car24
 - Card18
 - Card24
 - Channel18
@@ -875,6 +889,8 @@
 - Homepage24
 - HotFixes18
 - HotFixes24
+- HotelBed18
+- HotelBed24
 - IdentityService18
 - IdentityService24
 - Image18
@@ -1337,6 +1353,8 @@
 - SQLQuery24
 - Sampler18
 - Sampler24
+- Sandbox18
+- Sandbox24
 - SaveAsFloppy18
 - SaveAsFloppy24
 - SaveFloppy18
@@ -1411,6 +1429,10 @@
 - Sharpen24
 - Shield18
 - Shield24
+- Ship18
+- Ship24
+- Shop18
+- Shop24
 - ShoppingCart18
 - ShoppingCart24
 - ShowAllLayers18
@@ -1445,6 +1467,8 @@
 - SplitView24
 - SpotHeal18
 - SpotHeal24
+- Stadium18
+- Stadium24
 - Stage18
 - Stage24
 - Stamp18
@@ -1645,6 +1669,8 @@
 - ThumbUpOutline24
 - Tips18
 - Tips24
+- Train18
+- Train24
 - TransferToPlatform18
 - TransferToPlatform24
 - Transparency18
@@ -1791,19 +1817,23 @@
 - ZoomIn24
 - ZoomOut18
 - ZoomOut24
-- _12318
-- _12324
-- _3DMaterials18
-- _3DMaterials24
+- \_12318
+- \_12324
+- \_3DMaterials18
+- \_3DMaterials24
+
 ### UI icons
+
 ```html
 <script>
-       import UiIcon from "svelte-spectrum-icons/ui/{ModuleName}";
-     </script>
+  import UiIcon from "svelte-spectrum-icons/ui/{ModuleName}";
+</script>
 
-     <UiIcon />
+<UiIcon />
 ```
+
 #### List of UI icons by `ModuleName`
+
 - AlertMedium
 - AlertMediumMobile
 - AlertSmall
