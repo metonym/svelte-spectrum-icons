@@ -50,12 +50,12 @@
       <pre class="d-flex flex-1">
         <code class="p-3">
           {`<script>
-  import Asterisk from "svelte-spectrum-icons/ui/Asterisk";
-  import Add18 from "svelte-spectrum-icons/workflow/Add18";
+  import Asterisk from "svelte-spectrum-icons/ui/Asterisk.svelte";
+  import Add24 from "svelte-spectrum-icons/workflow/Add24.svelte";
 <\/script>
 
 <Asterisk />
-<Add18 />`}
+<Add24 />`}
         </code>
       </pre>
     </Box.Box>
@@ -88,7 +88,7 @@
           <h6>{icon}</h6>
         </div>
         <div>
-          <svelte:component this={workflow[icon]} />
+          <svelte:component this={workflow[icon]} width="24" height="24" />
         </div>
       </Box.Box>
     {/each}

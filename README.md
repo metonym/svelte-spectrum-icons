@@ -27,22 +27,20 @@ npm -i -D svelte-spectrum-icons
 
 ## Usage
 
-Workflow icons are located in the `workflow` folder while UI icons are in the `ui` folder.
-
 ```html
 <script>
-  import Add18 from "svelte-spectrum-icons/workflow/Add18";
-  import Asterisk from "svelte-spectrum-icons/ui/Asterisk";
+  import Asterisk from "svelte-spectrum-icons/ui/Asterisk.svelte";
+  import Add24 from "svelte-spectrum-icons/workflow/Add24.svelte";
 </script>
 
-<Add18 />
 <Asterisk />
+<Add24 />
 ```
 
-Refer to [ICON_INDEX.md](ICON_INDEX.md) for a full list of supported icons:
+For a full list of supported icons:
 
-- [Workflow icons](ICON_INDEX.md#workflow-icons)
-- [UI icons](ICON_INDEX.md#ui-icons)
+- **UI**: [UI_ICONS.md](UI_ICONS.md)
+- **Workflow**: [WORKFLOW_ICONS.md](WORKFLOW_ICONS.md)
 
 ## API
 
