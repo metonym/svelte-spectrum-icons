@@ -8,9 +8,6 @@
   "scripts": {
     "prepack": "node build"
   },
-  "peerDependencies": {
-    "svelte": "^3.20.x"
-  },
   "devDependencies": {
     "@adobe/spectrum-css-workflow-icons": "1.1.0",
     "@spectrum-css/icon": "2.1.1",
