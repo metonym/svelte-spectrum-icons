@@ -22,7 +22,7 @@ Try it in the [Svelte REPL](https://svelte.dev/repl/8b2c2ef9ad68426bb320d455026b
 ```sh
 yarn add -D svelte-spectrum-icons
 # OR
-npm -i -D svelte-spectrum-icons
+npm i -D svelte-spectrum-icons
 ```
 
 ## Usage
