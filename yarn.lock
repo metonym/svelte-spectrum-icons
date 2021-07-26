@@ -12,14 +12,14 @@
   resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-2.1.1.tgz#53b371b293833e501898472dda8661a07db09fd8"
   integrity sha512-Ddnjw3YTZiuJC8uVJ9x6i+ufQN+Vp4vibc+YxE7nXn8tWzT8zTRzwv6oHwSG9m+KzonTfnwqPuQx6ZA8vbK9xA==
 
-svelte@^3.24.0:
-  version "3.24.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.24.1.tgz#aca364937dd1df27fe131e2a4c234acb6061db4b"
-  integrity sha512-OX/IBVUJSFo1rnznXdwf9rv6LReJ3qQ0PwRjj76vfUWyTfbHbR9OXqJBnUrpjyis2dwYcbT2Zm1DFjOOF1ZbbQ==
+svelte@^3.32.1:
+  version "3.40.2"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.40.2.tgz#93ab56e9ba45ed8647a19ebdc242a31939ae0134"
+  integrity sha512-FrxVBISeRK0fEeg17D5TftKpaFTLPS7S1C+hf21w5gzzi11MlkJZdqJ9XYmPkAeLGeVpQSQDyWET65NVJjTJ4A==
 
-svg-to-svelte@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/svg-to-svelte/-/svg-to-svelte-2.0.0.tgz#0069ccd8dca85fb2fc233eac3b56c54235425c66"
-  integrity sha512-zKVAPwmZvqgu04ulR/92HILIt3LAGP+RZTGFDsqsBXEw/qABGqhQFlkmqNAtRq4iV5iVRb+O6nQX0CgoVzwatw==
+svg-to-svelte@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/svg-to-svelte/-/svg-to-svelte-2.2.1.tgz#6dfab0af1b2eaf689fb182f73ec7831ce375bb4c"
+  integrity sha512-FixujLhaXhCKnFkOkqwYkO+QQHMLDrlAb4aCRJbucpkkVvRoA1Iml+Wvy0TNax1ljIAAkFjhmtxNHmGeWjT3VA==
   dependencies:
-    svelte "^3.24.0"
+    svelte "^3.32.1"
