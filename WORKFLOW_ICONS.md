@@ -1,6 +1,6 @@
 # Workflow icons
 
-> 1803 icons from svelte-spectrum-icons@2.0.0.
+> 1809 icons from svelte-spectrum-icons@2.1.0.
 
 ## Usage
 
@@ -1389,6 +1389,8 @@
 - SelectIntersect24
 - SelectSubstract18
 - SelectSubstract24
+- SelectSubtract18
+- SelectSubtract24
 - Selection18
 - Selection24
 - SelectionChecked18
@@ -1501,6 +1503,10 @@
 - SubstractBackPath24
 - SubstractFromSelection18
 - SubstractFromSelection24
+- SubtractBackPath18
+- SubtractBackPath24
+- SubtractFromSelection18
+- SubtractFromSelection24
 - SubtractFrontPath18
 - SubtractFrontPath24
 - SuccessMetric18

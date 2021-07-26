@@ -9,7 +9,7 @@
   $: codeInstall =
     tabIndexInstall === 0
       ? "yarn add -D svelte-spectrum-icons"
-      : "npm -i -D svelte-spectrum-icons";
+      : "npm i -D svelte-spectrum-icons";
 </script>
 
 <div class="clearfix mb-6">
