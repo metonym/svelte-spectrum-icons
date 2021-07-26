@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@adobe/spectrum-css-workflow-icons/-/spectrum-css-workflow-icons-1.2.1.tgz#7e2cb3fcfb5c8b12d7275afafbb6ec44913551b4"
   integrity sha512-uVgekyBXnOVkxp+CUssjN/gefARtudZC8duEn1vm0lBQFwGRZFlDEzU1QC+aIRWCrD1Z8OgRpmBYlSZ7QS003w==
 
-"@spectrum-css/icon@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-2.1.1.tgz#53b371b293833e501898472dda8661a07db09fd8"
-  integrity sha512-Ddnjw3YTZiuJC8uVJ9x6i+ufQN+Vp4vibc+YxE7nXn8tWzT8zTRzwv6oHwSG9m+KzonTfnwqPuQx6ZA8vbK9xA==
+"@spectrum-css/icon@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-3.0.3.tgz#5c612822380927087aebd526855d82ed2c3e2cba"
+  integrity sha512-hyloKOejPCXhP3MBNsm3SjR9j8xT1R1S19p32KW/0Qhj+VMUtfyEPmevyFptpn7wcovQccdl/vZVIVDuML/imw==
 
 svelte@^3.32.1:
   version "3.40.2"
