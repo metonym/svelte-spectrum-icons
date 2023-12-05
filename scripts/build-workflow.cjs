@@ -6,10 +6,14 @@ const {
   toSvelte,
   generateIndex,
 } = require("svg-to-svelte");
-const pkg = require("./package.json");
+const pkg = require("../package.json");
+
+const dir = "src/lib/workflow";
 
 async function buildWorkflow() {
-  await cleanDir("workflow");
+  fs.mkdirSync(dir, { recursive: true });
+
+  await cleanDir(dir);
 
   const size_18 = fs
     .readdirSync("node_modules/@adobe/spectrum-css-workflow-icons/dist/18")
@@ -18,9 +22,9 @@ async function buildWorkflow() {
         source: fs.readFileSync(
           path.join(
             "node_modules/@adobe/spectrum-css-workflow-icons/dist/18",
-            file
+            file,
           ),
-          "utf-8"
+          "utf-8",
         ),
         moduleName: toModuleName(file) + "18",
       };
@@ -33,9 +37,9 @@ async function buildWorkflow() {
         source: fs.readFileSync(
           path.join(
             "node_modules/@adobe/spectrum-css-workflow-icons/dist/24",
-            file
+            file,
           ),
-          "utf-8"
+          "utf-8",
         ),
         moduleName: toModuleName(file) + "24",
       };
@@ -43,16 +47,16 @@ async function buildWorkflow() {
 
   const size_24_color = fs
     .readdirSync(
-      "node_modules/@adobe/spectrum-css-workflow-icons/dist/color/24"
+      "node_modules/@adobe/spectrum-css-workflow-icons/dist/color/24",
     )
     .map((file) => {
       return {
         source: fs.readFileSync(
           path.join(
             "node_modules/@adobe/spectrum-css-workflow-icons/dist/color/24",
-            file
+            file,
           ),
-          "utf-8"
+          "utf-8",
         ),
         moduleName: toModuleName(file) + "24",
       };
@@ -69,13 +73,13 @@ async function buildWorkflow() {
     .map((icon) => {
       const { template } = toSvelte(icon.source);
       fs.writeFileSync(
-        path.join("workflow", `${icon.moduleName}.svelte`),
-        template
+        path.join(dir, `${icon.moduleName}.svelte`),
+        template,
       );
       return `export { default as ${icon.moduleName} } from "./${icon.moduleName}.svelte";\n`;
     });
 
-  fs.writeFileSync(path.join("workflow", "index.js"), exports.join(""));
+  fs.writeFileSync(path.join(dir, "index.js"), exports.join(""));
 
   await generateIndex({
     title: "Workflow icons",
