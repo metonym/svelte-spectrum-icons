@@ -1,6 +1,6 @@
 # Workflow icons
 
-> 1809 icons from svelte-spectrum-icons@2.1.0.
+> 1805 icons from svelte-spectrum-icons@4.0.5.
 
 ## Usage
 
@@ -283,6 +283,8 @@
 - ChevronUpDown24
 - Circle18
 - Circle24
+- CircleFilled18
+- CircleFilled24
 - ClassicGridView18
 - ClassicGridView24
 - Clock18
@@ -934,6 +936,8 @@
 - IntersectOverlap24
 - InvertAdj18
 - InvertAdj24
+- Invite18
+- Invite24
 - Journey18
 - Journey24
 - JourneyAction18
@@ -1387,8 +1391,6 @@
 - SelectGear24
 - SelectIntersect18
 - SelectIntersect24
-- SelectSubstract18
-- SelectSubstract24
 - SelectSubtract18
 - SelectSubtract24
 - Selection18
@@ -1499,10 +1501,6 @@
 - StrokeWidth24
 - Subscribe18
 - Subscribe24
-- SubstractBackPath18
-- SubstractBackPath24
-- SubstractFromSelection18
-- SubstractFromSelection24
 - SubtractBackPath18
 - SubtractBackPath24
 - SubtractFromSelection18
@@ -1557,8 +1555,6 @@
 - TableSelectColumn24
 - TableSelectRow18
 - TableSelectRow24
-- Tableau18
-- Tableau24
 - TagBold18
 - TagBold24
 - TagItalic18

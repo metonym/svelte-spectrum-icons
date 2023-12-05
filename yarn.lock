@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-"@adobe/spectrum-css-workflow-icons@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@adobe/spectrum-css-workflow-icons/-/spectrum-css-workflow-icons-1.2.1.tgz#7e2cb3fcfb5c8b12d7275afafbb6ec44913551b4"
-  integrity sha512-uVgekyBXnOVkxp+CUssjN/gefARtudZC8duEn1vm0lBQFwGRZFlDEzU1QC+aIRWCrD1Z8OgRpmBYlSZ7QS003w==
+"@adobe/spectrum-css-workflow-icons@1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@adobe/spectrum-css-workflow-icons/-/spectrum-css-workflow-icons-1.5.4.tgz#0e09ff519c36139176c3ba3ce617a995c9032f67"
+  integrity sha512-sZ19YOLGw5xTZzCEkVXPjf53lXVzo063KmDTJjpSjy/XLVsF+RaX0b436SfSM4hsIUZ7n27+UsbOvzFaFjcYXw==
 
-"@spectrum-css/icon@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-2.1.1.tgz#53b371b293833e501898472dda8661a07db09fd8"
-  integrity sha512-Ddnjw3YTZiuJC8uVJ9x6i+ufQN+Vp4vibc+YxE7nXn8tWzT8zTRzwv6oHwSG9m+KzonTfnwqPuQx6ZA8vbK9xA==
+"@spectrum-css/icon@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-4.0.5.tgz#7f2d9ddb372852192e5b9b314749a596458faec2"
+  integrity sha512-8kx+fZVRV0f1AUzla1ZGbRqxf3kXNXCDiJR3+LzeV4Gu1eK9/6gSRplM6DWbbCnsChES/+s7eT6NoPRLxSWUGQ==
 
 svelte@^3.32.1:
-  version "3.40.2"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.40.2.tgz#93ab56e9ba45ed8647a19ebdc242a31939ae0134"
-  integrity sha512-FrxVBISeRK0fEeg17D5TftKpaFTLPS7S1C+hf21w5gzzi11MlkJZdqJ9XYmPkAeLGeVpQSQDyWET65NVJjTJ4A==
+  version "3.59.2"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.59.2.tgz#a137b28e025a181292b2ae2e3dca90bf8ec73aec"
+  integrity sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==
 
 svg-to-svelte@^2.2.1:
   version "2.2.1"

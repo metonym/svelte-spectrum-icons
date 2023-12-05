@@ -9,8 +9,8 @@
     "prepack": "node build-ui && node build-workflow"
   },
   "devDependencies": {
-    "@adobe/spectrum-css-workflow-icons": "1.2.1",
-    "@spectrum-css/icon": "2.1.1",
+    "@adobe/spectrum-css-workflow-icons": "1.5.4",
+    "@spectrum-css/icon": "4.0.5",
     "svg-to-svelte": "^2.2.1"
   },
   "repository": {
