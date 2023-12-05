@@ -2,16 +2,33 @@
   "name": "svelte-spectrum-icons",
   "version": "2.1.0",
   "license": "MIT",
+  "type": "module",
   "description": "Adobe Spectrum Workflow and UI SVG icons as Svelte components",
   "author": "Eric Liu (https://github.com/metonym)",
   "sideEffects": false,
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "prepack": "node build-ui && node build-workflow"
+    "package": "prepack && svelte-kit sync && svelte-package && publint",
+    "prepublishOnly": "npm run package",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "prepack": "node scripts/build-ui.cjs && node scripts/build-workflow.cjs"
   },
   "devDependencies": {
     "@adobe/spectrum-css-workflow-icons": "1.5.4",
     "@spectrum-css/icon": "4.0.5",
-    "svg-to-svelte": "^2.2.1"
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.27.4",
+    "@sveltejs/package": "^2.0.0",
+    "prettier": "^3.1.0",
+    "publint": "^0.1.9",
+    "svelte": "^4.2.7",
+    "svelte-check": "^3.6.0",
+    "svg-to-svelte": "^2.2.1",
+    "tslib": "^2.4.1",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.2"
   },
   "repository": {
     "type": "git",
@@ -29,7 +46,23 @@
     "svg"
   ],
   "files": [
-    "workflow",
-    "ui"
-  ]
+    "dist"
+  ],
+  "peerDependencies": {
+    "svelte": "^4.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    },
+    "./ui": {
+      "types": "./dist/ui/index.d.ts",
+      "svelte": "./dist/ui/index.js"
+    },
+    "./workflow": {
+      "types": "./dist/workflow/index.d.ts",
+      "svelte": "./dist/workflow/index.js"
+    }
+  }
 }

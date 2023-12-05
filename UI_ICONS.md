@@ -1,6 +1,6 @@
 # UI icons
 
-> 98 icons from svelte-spectrum-icons@4.0.5.
+> 98 icons from svelte-spectrum-icons@2.1.0.
 
 ## Usage
 

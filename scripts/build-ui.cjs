@@ -6,10 +6,14 @@ const {
   toSvelte,
   generateIndex,
 } = require("svg-to-svelte");
-const pkg = require("./package.json");
+const pkg = require("../package.json");
 
-async function buildUI() {
-  await cleanDir("ui");
+const dir = "src/lib/ui";
+
+async function buildUi() {
+  fs.mkdirSync(dir, { recursive: true });
+
+  await cleanDir(dir);
 
   const large = fs
     .readdirSync("node_modules/@spectrum-css/icon/large")
@@ -17,7 +21,7 @@ async function buildUI() {
       return {
         source: fs.readFileSync(
           path.join("node_modules/@spectrum-css/icon/large", file),
-          "utf-8"
+          "utf-8",
         ),
         moduleName: toModuleName(file) + "Mobile",
       };
@@ -28,7 +32,7 @@ async function buildUI() {
       return {
         source: fs.readFileSync(
           path.join("node_modules/@spectrum-css/icon/medium", file),
-          "utf-8"
+          "utf-8",
         ),
         moduleName: toModuleName(file),
       };
@@ -44,11 +48,11 @@ async function buildUI() {
     })
     .map((icon) => {
       const { template } = toSvelte(icon.source);
-      fs.writeFileSync(path.join("ui", `${icon.moduleName}.svelte`), template);
+      fs.writeFileSync(path.join(dir, `${icon.moduleName}.svelte`), template);
       return `export { default as ${icon.moduleName} } from "./${icon.moduleName}.svelte";\n`;
     });
 
-  fs.writeFileSync(path.join("ui", "index.js"), exports.join(""));
+  fs.writeFileSync(path.join(dir, "index.js"), exports.join(""));
 
   await generateIndex({
     title: "UI icons",
@@ -62,4 +66,4 @@ async function buildUI() {
   return { icons };
 }
 
-buildUI();
+buildUi();
